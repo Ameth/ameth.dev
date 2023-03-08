@@ -15,6 +15,7 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/Skills.astro';
+import Portrait from '../components/Portrait.astro';
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
@@ -25,28 +26,29 @@ const projects = (await getCollection('work'))
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<BaseLayout>
+<BaseLayout title="Ameth Ordoñez: Sitio personal" description="Sitio personal de Ameth Ordoñez">
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hola, mi nombre es Ameth Ordoñez"
+					tagline="Fullstack developer con 10+ años de experiencia en desarrollo web y manager en proyectos de desarrollo de software."
 					align="start"
 				>
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="users-three" size="1.33em" /> Proyect manager</Pill>
+						<Pill><Icon icon="pencil-line" size="1.33em" /> Code contributor</Pill>
 					</div>
 				</Hero>
 
-				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+				<Portrait />
+				<!-- <img
+					alt="Ameth Ordonez"
 					width="480"
 					height="620"
 					src="/assets/portrait.jpg"
-				/>
+				/> -->
 			</header>
 
 			<Skills />
@@ -55,8 +57,8 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Proyectos</h3>
+					<p>Eche un vistazo a algunos de mis trabajos destacados.</p>
 				</header>
 
 				<div class="gallery">
@@ -73,7 +75,7 @@ const projects = (await getCollection('work'))
 
 				<div class="cta">
 					<CallToAction href="/work/">
-						View All
+						Ver todos
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
@@ -81,22 +83,29 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Educación</h3>
 					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
+						Algunos de los cursos y certificaciones que he realizado
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
+						<li class="mention-card">
+							<p>Desarrollo profesional con Vue.js</p>
+						</li>
+						<li class="mention-card">
+							<p>Curso de Nuxt 2</p>
+						</li>
+						<li class="mention-card">
+							<p>Curso de Testing con Javascript</p>
+						</li>
+						<li class="mention-card">
+							<p>Curso de Docker</p>
+						</li>
+						<li class="mention-card">
+							<p>Curso de autenticación con OAuth</p>
+						</li>
 					</Grid>
 				</div>
 			</section>

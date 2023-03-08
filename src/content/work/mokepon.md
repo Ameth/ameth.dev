@@ -1,10 +1,9 @@
 ---
-title: Markdown Mystery Tour
+title: Mokepon Vue
 publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
-description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+img: /assets/proyect-mokepon.png
+img_alt: Mokepn Vue
+description: Adaptación del juego Mokepon desarrollado en Vue.js y Socket.io para el sistema de realtime.
 tags:
   - Design
   - Dev

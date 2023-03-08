@@ -1,120 +1,157 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro'
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import ContactCTA from '../components/ContactCTA.astro'
+import Hero from '../components/Hero.astro'
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
-			</Hero>
+<BaseLayout
+  title='Acerca de mi | Ameth Ordoñez'
+  description='Acerca de Ameth Ordoñez'
+>
+  <div class='stack gap-20'>
+    <main class='wrapper about'>
+      <Hero
+        title='Acerca de mi'
+        tagline='Gracias por estar aqui. Lea a continuación para obtener más información sobre mí y mis trabajos.'
+      >
+        <img
+          width='1553'
+          height='873'
+          src='/assets/at-work.jpg'
+          alt='Ameth Ordoñez'
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class='section-title'>Experiencia</h2>
+        <div class='content'>
+          <ul>
+            <li>
+              Líder y desarrollador del proyecto <strong>PortalOne</strong>,
+              software multiservicios para empresas con el ERP SAP Bussiness
+              One, desarrollado en PHP y Javascript, multibase de datos (SQL
+              Server, MySQL y SAP HANA)
+            </li>
+            <li>
+              Generación de reportes y dashboard en tiempo real utilizando
+              Crystal Reports y Microsoft Power BI &copy;
+            </li>
+            <li>
+              Desarrollador de software para la gestión de obras llamado <strong
+                >Inventory</strong
+              >, que permite el control de inventarios, remisiones de compra,
+              gestión de pedidos al departamento de compras y autorizaciones de
+              pedidos
+            </li>
+            <li>
+              Desarrollador de portal web para el control de proveedores, que
+              permite a más de 1.500 proveedores gestionar ordenes de compra,
+              entregas de mercancías, control de facturas, pagos y descarga de
+              certificados de retenciones
+            </li>
+            <li>
+              Desarrollo de software <strong>Syscob</strong>, sistema in house
+              que permite realización de gestiones de cobro para el sector real
+              y financiero, reportes de gerencia y control del área jurídica,
+              sistema de control documental, entre otros.
+            </li>
+            <li>
+              Integración del software con sistema de telefonía VoIP Issabel
+              para llamadas automatizadas
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class='section-title'>Idiomas</h2>
+        <div class='content'>
+          <ul>
+            <li><strong>Español</strong>: Completamente fluido</li>
+            <li><strong>Ingles</strong>: Conversacional A2</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class='section-title'>Habilidades</h2>
+        <div class='content'>
+          <ul>
+            <li>
+              Buen compañero y con excelente relaciones para trabajo en equipo
+            </li>
+            <li>Autodidacta</li>
+            <li>Experiencia en trabajo 100% remoto</li>
+            <li>
+              Facilidad para seguir instrucciones y generar resultados de
+              calidad
+            </li>
+            <li>
+              Colaborador en todo sentido, con la mejor actitud para aprender,
+              enseñar, guiar y liderar
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-		<ContactCTA />
-	</div>
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>
