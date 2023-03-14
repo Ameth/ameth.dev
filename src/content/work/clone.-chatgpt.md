@@ -8,7 +8,7 @@ url: https://chatgpt-ameth.netlify.app/
 tags:
   - Vue
   - Artificial Intelligence
-  - Javascript
+  - JavaScript
   - Chat
 ---
 

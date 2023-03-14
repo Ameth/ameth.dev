@@ -7,7 +7,7 @@ description: Juego de palabras al estilo punto y fama desarrollado en Vue.
 url: https://vue-wordle-spanish.netlify.app/
 tags:
   - Vue
-  - Typescript
+  - TypeScript
   - Vite
   - Game
 ---
