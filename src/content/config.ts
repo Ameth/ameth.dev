@@ -12,4 +12,12 @@ export const collections = {
       url: z.string().optional(),
     }),
   }),
+  blog: defineCollection({
+    schema: z.object({
+      title: z.string(),
+      description: z.string(),
+      date: z.coerce.date(),
+      icon: z.string().optional(),
+    }),
+  }),
 }
