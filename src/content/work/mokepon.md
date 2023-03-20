@@ -1,7 +1,7 @@
 ---
 title: Mokepon Vue
 publishDate: 2022-09-22 00:00:00
-img: /assets/proyect-mokepon.png
+img: /assets/proyect-mokepon.webp
 img_alt: Mokepn Vue
 description: Adaptación del juego Mokepon desarrollado en Vue.js y Socket.io para el sistema de realtime.
 url: https://mokepon-vue-ameth.netlify.app/

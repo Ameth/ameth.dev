@@ -1,7 +1,7 @@
 ---
 title: Clon de ChatGPT
 publishDate: 2023-02-15 00:00:00
-img: /assets/proyect-chatgpt.png
+img: /assets/proyect-chatgpt.webp
 img_alt: Clone ChatGPT
 description: Clon ChatGPT, chat de inteligencia artificial desarrollado por OpenAI utilizando su API para interactuar con ella.
 url: https://chatgpt-ameth.netlify.app/

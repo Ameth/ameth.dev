@@ -1,7 +1,7 @@
 ---
 title: Wordle Vue
 publishDate: 2022-10-21 00:00:00
-img: /assets/proyect-wordle.png
+img: /assets/proyect-wordle.webp
 img_alt: Wordle Vue
 description: Juego de palabras al estilo punto y fama desarrollado en Vue.
 url: https://vue-wordle-spanish.netlify.app/

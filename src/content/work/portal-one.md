@@ -1,7 +1,7 @@
 ---
 title: Portal One
 publishDate: 2019-03-04 00:00:00
-img: /assets/proyect-portalone.png
+img: /assets/proyect-portalone.webp
 img_alt: PortalOne
 description: Software multiservicios para empresas con el ERP SAP Bussiness One, desarrollado en PHP y Javascript, multibase de datos.
 url: https://nedugatech.com
