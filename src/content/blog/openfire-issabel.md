@@ -48,7 +48,7 @@ Se debe descargar el archivo en formato `.rpm` y ponerlo en la carpeta `/tmp` de
 
 7. Ver las bases de datos activas:
 
-```cmd
+```sql
 MariaDB [(none)]> show databases;
 MariaDB [(none)]> quit
 ```
@@ -61,7 +61,7 @@ MariaDB [(none)]> quit
 
 9. Ingresamos a la consola de MySQL y le damos provilegios al usuario de openfire:
 
-```cmd
+```sql
 [root@issabel database]# mysql -u root -p
 
 MariaDB [(none)]> use openfire;
