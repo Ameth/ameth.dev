@@ -28,14 +28,14 @@ PHPMailer también es usado por populares sistemas de administración de conteni
 
 Puedes instalar PHPMailer usando Composer para enviar correos electrónicos en PHP:
 
-```
+```cmd
 composer require phpmailer/phpmailer
 ```
 
 #### Enviar correos electrónicos en PHP desde un servidor web local usando PHPMailer
 Aquí está el ejemplo más simple de enviar correos electrónicos en PHP desde un servidor web local usando PHPMailer:
 
-```
+```php
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -80,7 +80,7 @@ El código y los comentarios deben ser lo suficientemente claros para explicar t
 #### Enviar correos electrónicos en PHP con archivos adjuntos
 Aquí tienes un ejemplo de cómo enviar un correo electrónico con archivos adjuntos usando PHPMailer:
 
-```
+```php
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -121,19 +121,19 @@ En nuestros dos ejemplos, **usamos la clase PHPMailer’s Exception para la depu
 
 Dependiendo del sistema que utilicemos, probablemente el error más frecuente que veremos estará relacionado con la ejecución de la función `mail()` en segundo plano:
 
-```
+```php
 Mailer Error: Could not instantiate mail function.
 ```
 
 Si necesitamos más detalles sobre el error, también podemos añadir algo como esto a la cláusula de captura:
 
-```
+```php
 print_r(error_get_last());
 ```
 
 Normalmente, el problema con la función de correo estará relacionado con la falta de configuración del servidor de correo, en cuyo caso la función `error_get_last()` devolverá algo como esto:
 
-```
+```php
 Array (
     [type] => 2
     [message] => mail(): Failed to connect to mailserver at "localhost" port 25, verify your "SMTP" and "smtp_port" setting in php.ini or use ini_set()
@@ -152,7 +152,7 @@ Para mostrar los mensajes de error en un idioma diferente, copia el directorio d
 
 Para devolver los mensajes de error en español, por ejemplo, pon el objeto PHPMailer en el idioma español usando la siguiente llamada al método:
 
-```
+```php
 $mail->setLanguage("es");
 ```
 
@@ -166,7 +166,7 @@ SMTP es un protocolo utilizado por los clientes de correo para enviar una solici
 
 A continuación, se muestra un ejemplo de envío de un correo electrónico desde el servidor de correo de Gmail desde tu dominio. No necesitas un servidor de correo local para ejecutar el código. Utilizaremos el protocolo SMTP:
 
-```
+```php
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;

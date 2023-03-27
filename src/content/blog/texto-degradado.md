@@ -12,7 +12,7 @@ Eso me hizo pensar en **fuentes y degradados CSS**, ya que los degradados tambi�
 
 Para mostrar un degradado para una fuente dada, en lugar de un color sólido, necesitará usar algunas propiedades prefijadas de la vieja escuela `-webkit-`:
 
-```
+```css
 .texto-degradado {
   /* standard gradient background */
   background: linear-gradient(red, blue);

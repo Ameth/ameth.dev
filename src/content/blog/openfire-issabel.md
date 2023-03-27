@@ -17,44 +17,51 @@ Se debe descargar el archivo en formato `.rpm` y ponerlo en la carpeta `/tmp` de
 
 2. Para instalar el paquete ejecutar (reemplazar el nombre del archivo según sea el caso):
 
-```
+```cmd
 [root@issabel tmp]# yum -y install openfire-4.3.2-1.x86_64.rpm
 ```
 
 3. Iniciar el servicio:
-```
+
+```cmd
 [root@issabel tmp]# systemctl start openfire.service
 [root@issabel tmp]# systemctl enable openfire.service
 ```
 
 4. Ingresar a la carpeta de openfire para crear la base de datos:
-```
+
+```cmd
 [root@issabel tmp]# cd /opt/openfire/resources/database
 ```
 
 5. Creamos la base de datos:
-```
+
+```cmd
 [root@issabel database]# mysqladmin create openfire -p
 ```
 
 6. Ingresamos a la consola de MySQL:
-```
+
+```cmd
 [root@issabel database]# mysql -u root -p
 ```
 
 7. Ver las bases de datos activas:
-```
+
+```cmd
 MariaDB [(none)]> show databases;
 MariaDB [(none)]> quit
 ```
 
 8. Creamos la estructura de la base de datos:
-```
+
+```cmd
 [root@issabel database]# cat openfire_mysql.sql |mysql openfire -p
 ```
 
 9. Ingresamos a la consola de MySQL y le damos provilegios al usuario de openfire:
-```
+
+```cmd
 [root@issabel database]# mysql -u root -p
 
 MariaDB [(none)]> use openfire;
@@ -64,7 +71,8 @@ MariaDB [openfire]> quit
 ```
 
 10. Comprobamos que todo funciona vía web:
-```
+
+```cmd
 http://ipserver:9090
 ```
 
