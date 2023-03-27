@@ -32,3 +32,5 @@ Aquí te dejo como se vería el código anterior:
 Esta mezcla de CSS específico de `-webkit-` y fondo de degradado general se descubrió hace diez años, pero sigue siendo la mejor manera de **conseguir un fondo de CSS puro, incluso con fuentes personalizadas**. Ten en cuenta que a pesar del prefijo `-webkit`, Firefox sigue renderizando correctamente la fuente de degradado. También ten en cuenta que la eliminación del prefijo rompe el renderizado correcto.
 
 Con todo lo complicado que pueden llegar a ser las fuentes, es increíble que tengamos un hack CSS bastante simple para lograr texto con degradado de color en CSS. Es una pena que evitar el prefijo `-webkit` rompa la funcionalidad, pero como siempre digo **¡bienvenido al mundo de CSS!**
+
+Si te ha gustado este artículo, te recomiento leer [Aplicar estilos solo a las viñetas de listas ordenadas con CSS](estilos-listas-css)
