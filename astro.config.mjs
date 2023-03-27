@@ -6,6 +6,7 @@ import tailwind from '@astrojs/tailwind'
 // https://astro.build/config
 export default defineConfig({
   markdown: {
+    syntaxHighlight: 'shiki',
     shikiConfig: {
       // Escoge entre los temas integrados de Shiki (o agrega los tuyos propios)
       // https://github.com/shikijs/shiki/blob/main/docs/themes.md
@@ -15,8 +16,8 @@ export default defineConfig({
       // https://github.com/shikijs/shiki/blob/main/docs/languages.md
       langs: [],
       // Habilita word wrap para evitar el desplazamiento horizontal
-      wrap: true,
+      wrap: false,
     },
   },
-  integrations: [tailwind()]
-});
+  integrations: [tailwind()],
+})
